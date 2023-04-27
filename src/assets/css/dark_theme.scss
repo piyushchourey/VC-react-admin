@@ -1,0 +1,84 @@
+:root {
+    --dark-primary-color: #5277ff;
+    --dark-btn-color: #09090B;
+    --dark-error-color: #FF8A8A;
+}
+
+.dark {
+    .blackthemebg input {
+        border:1px solid #EDEDEE!important;
+        border-radius: 4px !important;
+        background: #000 !important;
+    }
+
+    .sliderContainer {
+        border: 2px solid var(--dark-primary-color);
+        color: #D2D2D7;
+    }
+
+    form .MuiButtonBase-root {
+        background: var(--dark-primary-color);
+        border: 1px solid #1542EA;
+        color: var(--dark-btn-color);
+        
+    }
+
+    span.MuiSlider-rail {
+        background: #9EB2FF;
+    }
+
+    span.MuiSlider-track,
+    .MuiSlider-root .MuiSlider-valueLabelOpen {
+        background: var(--dark-primary-color);
+    }
+
+    main.MuiContainer-root form .loginForm.auth-error-class label,
+    .errorMsg {
+        color: var(--dark-error-color);
+    }
+
+    .light-red-theme .MuiSlider-root .MuiSlider-valueLabelOpen,
+    .light-red-theme span.MuiSlider-track {
+        background: #FF5B5B;
+    }
+
+    .light-red-theme span.MuiSlider-rail {
+        background: #FFEAEA;
+    }
+
+    .light-red-theme {
+        border: 1px solid #FF8A8A;
+    }
+
+    .loginForm label {
+        color: #D2D2D7;
+    }
+
+    .blueiconcolor svg,
+    .graycolor:hover svg {
+        fill: var(--dark-primary-color);
+    }
+
+    .auth-error-class input {
+        border-color: var(--dark-error-color);
+    }
+    .light-red-theme .sliderNo{
+        color: var( --dark-error-color);
+    }
+    form .btnSuccess button {
+        color: #fff;
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+ form .dangerSuccess button {
+        color: #fff;
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+    @media (max-width:500px) {
+        .icon-parent .blueiconcolor svg {
+            margin-right: 16px;
+        }
+    }
+}

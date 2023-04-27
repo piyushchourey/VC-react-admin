@@ -1,0 +1,486 @@
+
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+@import url('https://fonts.googleapis.com/css?family=Space Grotesk');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+
+@font-face {
+    font-family: Helvetica-regular;
+    src: url(../../../public/fonts/Helvetica.ttf);
+}
+
+*:focus-visible {
+    outline: none;
+}
+
+html,
+body,
+input,
+label {
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica-regular!important;
+}
+body{
+    overflow-x: inherit!important;
+    letter-spacing: 0 !important;
+}
+.toggle {
+    margin: 25px 15px auto;
+    align-content: left;
+}
+
+.App-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 40px 0px auto 120px;
+    height: 32px;
+}
+
+.App-logo:hover {
+    cursor: pointer;
+}
+
+.container {
+    //color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.container:hover {
+    cursor: pointer;
+}
+
+.underline {
+    width: 195px;
+    height: 4px;
+    background: #fff;
+    //mix-blend-mode: difference;
+    position: relative;
+    transform: translate(0, -100%);
+}
+
+// login page
+.MuiBox-root input {
+    width: 335px;
+    height: 40px;
+    border: 1px solid #393939;
+    border-radius: 4px;
+}
+
+.loginForm{
+    
+    label {
+        width: 100%;
+        display: inline-block;
+        font-size: 12px;
+        line-height: 130%;
+    }
+    
+    
+    input {
+        border-radius: 4px;
+        height: 40px;
+        padding:8px;
+        font-size: 14px;
+    }
+    .auth-error-class input,
+.auth-error-white input  {
+    padding-right: 30px;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+} 
+
+form.login-form-error input {
+    border: 1px solid #EA1919 !important;
+}
+
+main.MuiContainer-root form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    margin-top: 0;
+    width: 335px;
+}
+.shuffle-text-char {
+    text-decoration-line: underline;
+}
+main.MuiContainer-root form .loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+main.MuiContainer-root {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.MuiSlider-root .MuiSlider-valueLabelOpen {
+    top: 19px !important;
+    width: 36px;
+    height: 28px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.MuiSlider-root .MuiSlider-valueLabelOpen:before {
+    content: none !important;
+}
+
+span.shuffle-text {
+    font-size: 56px;
+}
+
+.MuiSlider-thumb>span {
+    font-size: 20px !important;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 5px;
+}
+
+span.MuiSlider-rail {
+    height: 8px;
+}
+
+.sliderNo {
+    // color: #5A5A66;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.sliderContainer .MuiSlider-root {
+    margin-top: 13px;
+}
+
+.sliderContainer {
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.14), 0px 2px 1px rgba(255, 255, 255, 0.12), 0px 1px 3px rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 20px 16px;
+    width: 100%;
+    height: 109px;
+}
+
+
+
+form .MuiButtonBase-root {
+    border-radius: 4px;
+    height: 40px;
+    text-transform: inherit;
+    margin: 0;
+    font-size: 16px;
+}
+
+.red-slider-border span.MuiSlider-rail {
+    height: 8px;
+}
+
+.red-slider-border .MuiSlider-root .MuiSlider-valueLabelOpen {
+    background: #EA1919 !important;
+}
+
+.errorMsg {
+    line-height: 150%;
+    font-size: 16px;
+}
+
+.graycolor {
+    color: #A0A0AA;
+}
+
+.graycolor :hover {
+    color: #8383d6;
+}
+
+.icon-parent {
+    display: flex;
+    float: right;
+    margin-right: 100px;
+    margin-top: 40px;
+}
+
+.icon-parent :first-child svg {
+    margin-right: 24px;
+}
+
+//tootip css
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 73px;
+    height: 24px;
+    background-color: #5A5A66;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    left: -14px;
+    top: 100%;
+    transform: translateX(-8px);
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 6px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltiptext:before {
+    content: "";
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #5A5A66;
+    border-top: 8px solid transparent;
+    position: absolute;
+    height: 0;
+    top: -15px;
+    left: 36%;
+}
+
+//tool tip css ends
+
+.accesscontainer {
+    display: flex;
+    align-items: center;
+    max-height:640px;
+    height: calc(100% - 150px);
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    max-width: 1020px;
+}
+
+
+.auth-error-class input {
+    background: #000 !important;
+}
+
+.MuiSlider-rail {
+    color: #9eb2ff;
+}
+
+.red-slider-border .MuiSlider-rail {
+    color: #FF8A8A;
+}
+
+.light-red-theme .MuiSlider-rail {
+    color: #FFEAEA !important;
+    box-shadow: none !important;
+    opacity: 0.8 !important;
+}
+
+.MuiSlider-rail {
+    opacity: 1!important;
+}
+
+.warning {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+    .underline {
+        background: black;
+    }
+}
+
+.geeks::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: green;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 100%;
+    }
+
+    0% {
+        left: 0;
+    }
+}
+
+@media(max-width:968px) {
+
+    .icon-parent {
+        right: 0%;
+
+        margin-right: 0px;
+    }
+
+    .App-logo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 25px 25px auto;
+        height: 22px;
+    }
+}
+
+@media (max-width:1024px){
+    .icon-parent {
+        margin-right: 16px;
+        margin-top: 20px;
+    }
+    .App-logo{
+        margin: 32px 0px 0 40px;
+    }
+}
+@media (max-width:767px){
+    .icon-parent {
+        margin-right: 0px;
+        margin-top: 24px;
+    }
+    .App-logo{
+        margin: 24px 0px 0 20px;
+    }
+}
+@media (max-width:500px){
+    .icon-parent {
+        margin-top: 20px;
+    }
+    .App-logo{
+        margin: 20px 0px 0 16px;
+    }
+}
+
+@-moz-document url-prefix() {
+    .MuiSlider-thumb>span {
+        padding-top: 2px;
+    }
+}
+
+
+#login{
+
+    height: fit-content;
+  }
+#login .container #login-row #login-column #login-box {
+
+  max-width: 600px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+#login .container #login-row #login-column #login-box #file-upload-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #file-upload-form #register-link {
+  margin-top: -85px;
+}
+#login{
+    label, span, td{color:#333;}
+    .btnRed{
+        background: red !important;
+        color: white !important;
+        border-color: red !important;
+    }
+    input[name='pdf']{
+        color: #333;
+        padding: 10px 10px;
+        background: white;
+        margin-bottom: 10px;
+    }
+ 
+    #controls {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      #controls td {
+        padding: 0;
+      }
+
+      #controls .label {
+        text-align: right;
+        padding-right: 2px;
+      }
+
+      #controls .explanation {
+        color: #999;
+        font-size: 90%;
+        padding-bottom: 5px;
+        max-width: 30em;
+      }
+      .slider{width:230px;}
+      .alert div{
+        color:black;
+        position: relative;
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+      }
+      .alert-success div{
+        color: #155724;
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+    }
+      .alert-danger div{
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+    }
+}
+.MuiFab-primary {
+    background-color: #dc3545;
+}
+.loggedinContainer{
+    position: relative;
+    max-width:500px;
+    margin:0 auto;
+    top: initial;
+    left:initial;
+    transform: none;
+    padding-top: 100px;
+}
+.vcVIdeolistContainer{margin-top: 30px;}
+.vc_cardMain{
+    overflow: hidden;
+    border-radius: 3px;
+    .vc_card_header{
+        padding: 10px;
+        background: #343541;
+    }
+
+.vc_card_content{padding:10px; color:#ad7d6c;    border: 1px solid #343541;}
+.vcCopybtn{float:right;cursor: pointer;
+svg{    vertical-align: text-bottom;}
+}
+.deleteVideoTrigger{    vertical-align: middle; cursor: pointer;}
+.vcfilename,.vcDate{color:#ad7d6c;}
+.copiedtext{display: none;}
+.copied {
+    .copytext{display: none;}
+    .copiedtext{display: block;}
+}
+}
+.overlay{position: fixed !important; height: 100% !important;}
